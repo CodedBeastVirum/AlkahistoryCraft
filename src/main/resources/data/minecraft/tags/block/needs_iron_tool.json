@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "alkahistorycraft:crystal_shard_ore"
+    "alkahistorycraft:crystal_shard_ore",
+    "alkahistorycraft:infused_crystal_block"
   ]
 }

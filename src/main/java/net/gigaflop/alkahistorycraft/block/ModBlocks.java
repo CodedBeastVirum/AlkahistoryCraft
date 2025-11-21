@@ -1,6 +1,7 @@
 package net.gigaflop.alkahistorycraft.block;
 
 import net.gigaflop.alkahistorycraft.AlkahistoryCraft;
+import net.gigaflop.alkahistorycraft.block.custom.InfusedCrystalBlock;
 import net.gigaflop.alkahistorycraft.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -24,6 +25,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CRYSTAL_SHARD_ORE = registerBlock("crystal_shard_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> INFUSED_CRYSTAL_BLOCK = registerBlock("infused_crystal_block",
+            () -> new InfusedCrystalBlock(
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
     //actual block registration
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

@@ -1,9 +1,9 @@
 {
   "item.alkahistorycraft.crystalfragment": "Crystal Fragment",
   "item.alkahistorycraft.crystal_chisel": "Crystal Chisel",
-
+  "item.alkahistorycraft.jeweled_apple": "Jeweled Apple",
   "block.alkahistorycraft.crystal_shard_block": "Block of Crystal shards",
   "block.alkahistorycraft.crystal_shard_ore": "Crystal Ore",
-
+  "block.alkahistorycraft.infused_crystal_block": "Infused Crystal Block",
   "creativetab.alkahistorycraft.alkahistory_items": "Alkahistory Items"
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "alkahistorycraft:block/dense_wood_planks"
+  }
+}

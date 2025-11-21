@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "alkahistorycraft:block/dense_wood_planks"
+  }
+}

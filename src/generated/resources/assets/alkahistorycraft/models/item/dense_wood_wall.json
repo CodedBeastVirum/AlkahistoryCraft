@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "alkahistorycraft:block/dense_wood_planks"
+  }
+}

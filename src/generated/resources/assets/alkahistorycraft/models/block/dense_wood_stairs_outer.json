@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "alkahistorycraft:block/dense_wood_planks",
+    "side": "alkahistorycraft:block/dense_wood_planks",
+    "top": "alkahistorycraft:block/dense_wood_planks"
+  }
+}

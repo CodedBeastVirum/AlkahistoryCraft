@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "Dense Wood",
+  "ingredients": [
+    {
+      "item": "alkahistorycraft:dense_wood_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "alkahistorycraft:dense_wood_button"
+  }
+}

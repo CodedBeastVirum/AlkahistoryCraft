@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "alkahistorycraft:block/dense_wood_planks"
+  }
+}

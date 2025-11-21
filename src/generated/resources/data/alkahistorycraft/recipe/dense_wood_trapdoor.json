@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "Dense Wood",
+  "key": {
+    "#": {
+      "item": "alkahistorycraft:dense_wood_planks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "alkahistorycraft:dense_wood_trapdoor"
+  }
+}

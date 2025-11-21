@@ -3,10 +3,15 @@ package net.gigaflop.alkahistorycraft.item;
 import net.gigaflop.alkahistorycraft.AlkahistoryCraft;
 import net.gigaflop.alkahistorycraft.item.custom.CrystalChiselItem;
 import net.gigaflop.alkahistorycraft.item.custom.FuelItem;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 public class ModItems {
     //deffered register, this code tells minecraft to load the item list at the correct time
@@ -20,7 +25,13 @@ public class ModItems {
             () -> new CrystalChiselItem(new Item.Properties().durability(256)));
 
     public static final DeferredItem<Item> JEWELEDAPPLE = ITEMS.register("jeweled_apple",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.JEWELEDAPPLE)));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.JEWELEDAPPLE)) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.alkahistorycraft.jeweled_apple.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
     public static final DeferredItem<Item> UNSTABLEFRAGMENT = ITEMS.register("unstable_fragment",
             () -> new FuelItem(new Item.Properties(), 3200));

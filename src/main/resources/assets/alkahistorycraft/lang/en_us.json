@@ -2,8 +2,17 @@
   "item.alkahistorycraft.crystalfragment": "Crystal Fragment",
   "item.alkahistorycraft.crystal_chisel": "Crystal Chisel",
   "item.alkahistorycraft.jeweled_apple": "Jeweled Apple",
+  "item.alkahistorycraft.unstable_fragment": "Unstable Fragment",
+  "item.alkahistorycraft.unstable_dust": "Unstable Dust",
+
   "block.alkahistorycraft.crystal_shard_block": "Block of Crystal shards",
   "block.alkahistorycraft.crystal_shard_ore": "Crystal Ore",
   "block.alkahistorycraft.infused_crystal_block": "Infused Crystal Block",
-  "creativetab.alkahistorycraft.alkahistory_items": "Alkahistory Items"
+
+  "creativetab.alkahistorycraft.alkahistory_items": "Alkahistory Items",
+
+  "tooltip.alkahistorycraft.infused_crystal_block.tooltip": "§9Able to convert items that fall on it§r",
+  "tooltip.alkahistorycraft.crystal_chisel": "<Press §oShift§r for more information>",
+  "tooltip.alkahistorycraft.crystal_chisel.shift_down": "§9Can shatter diamonds found in ore§r",
+  "tooltip.alkahistorycraft.jeweled_apple.tooltip": "provides temporary extra hearts, useful in a pinch"
 }

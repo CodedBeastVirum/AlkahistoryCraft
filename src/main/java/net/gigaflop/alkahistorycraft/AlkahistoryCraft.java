@@ -1,5 +1,7 @@
 package net.gigaflop.alkahistorycraft;
 
+import net.gigaflop.alkahistorycraft.block.ModBlocks;
+import net.gigaflop.alkahistorycraft.item.ModCreativeModeTabs;
 import net.gigaflop.alkahistorycraft.item.ModItems;
 import org.slf4j.Logger;
 
@@ -53,8 +55,11 @@ public class AlkahistoryCraft {
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
         //register items
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -71,6 +76,11 @@ public class AlkahistoryCraft {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.CRYSTALFRAGMENTS);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.CRYSTAL_SHARD_BLOCK);
+            event.accept(ModBlocks.CRYSTAL_SHARD_ORE);
         }
     }
 

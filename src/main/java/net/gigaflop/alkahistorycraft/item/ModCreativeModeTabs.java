@@ -24,6 +24,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CRYSTALCHISEL);
                         output.accept(ModBlocks.INFUSED_CRYSTAL_BLOCK);
                         output.accept(ModItems.JEWELEDAPPLE);
+                        output.accept(ModItems.UNSTABLEFRAGMENT);
+                        output.accept(ModItems.UNSTABLEDUST);
                     }).build());
 
     public static void register(IEventBus eventBus) {

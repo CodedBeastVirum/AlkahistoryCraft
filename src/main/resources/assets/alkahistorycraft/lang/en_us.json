@@ -9,6 +9,17 @@
   "block.alkahistorycraft.crystal_shard_ore": "Crystal Ore",
   "block.alkahistorycraft.infused_crystal_block": "Infused Crystal Block",
 
+  "block.alkahistorycraft.dense_wood_planks": "Dense wood planks",
+  "block.alkahistorycraft.dense_wood_stairs": "Dense wood stairs",
+  "block.alkahistorycraft.dense_wood_slab": "Dense wood slab",
+  "block.alkahistorycraft.dense_wood_pressure_plate": "Dense wood pressure plate",
+  "block.alkahistorycraft.dense_wood_button": "Dense wood button",
+  "block.alkahistorycraft.dense_wood_fence": "Dense wood fence",
+  "block.alkahistorycraft.dense_wood_fence_gate": "Dense wood fence gate",
+  "block.alkahistorycraft.dense_wood_wall": "Dense wood wall",
+  "block.alkahistorycraft.dense_wood_door": "Dense wood door",
+  "block.alkahistorycraft.dense_wood_trapdoor": "Dense wood trapdoor",
+
   "creativetab.alkahistorycraft.alkahistory_items": "Alkahistory Items",
 
   "tooltip.alkahistorycraft.infused_crystal_block.tooltip": "§9Able to convert items that fall on it§r",

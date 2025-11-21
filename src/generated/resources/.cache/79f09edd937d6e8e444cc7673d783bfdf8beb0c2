@@ -1,0 +1,7 @@
+// 1.21	2025-11-21T18:51:52.1426114	Tags for minecraft:block mod id alkahistorycraft
+7770279bd8bfab6e71c5247f6e10dbf781da9b25 data/minecraft/tags/block/fences.json
+62cbaf4449bb8011cbb202c53643b4c2e402e06e data/minecraft/tags/block/fence_gates.json
+44334322a679ed24e587041aeb093269e536fa32 data/minecraft/tags/block/mineable/pickaxe.json
+9f07302507d6aa51f6e8b2942a0d18a89027614b data/minecraft/tags/block/needs_diamond_tool.json
+e4545ab553401de1260f78a08f72cb05c2adce67 data/minecraft/tags/block/needs_iron_tool.json
+5943bf84a25381e448bca5757403e2e71651ffd3 data/minecraft/tags/block/walls.json

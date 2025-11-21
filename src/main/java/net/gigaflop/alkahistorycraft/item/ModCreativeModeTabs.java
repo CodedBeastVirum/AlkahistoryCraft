@@ -26,6 +26,18 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.JEWELEDAPPLE);
                         output.accept(ModItems.UNSTABLEFRAGMENT);
                         output.accept(ModItems.UNSTABLEDUST);
+                        //<editor-fold desc="Dense Wood">
+                        output.accept(ModBlocks.DENSE_WOOD_BLOCK);
+                        output.accept(ModBlocks.DENSE_WOOD_STAIRS);
+                        output.accept(ModBlocks.DENSE_WOOD_SLAB);
+                        output.accept(ModBlocks.DENSE_WOOD_PRESSURE_PLATE);
+                        output.accept(ModBlocks.DENSE_WOOD_BUTTON);
+                        output.accept(ModBlocks.DENSE_WOOD_FENCE);
+                        output.accept(ModBlocks.DENSE_WOOD_FENCE_GATE);
+                        output.accept(ModBlocks.DENSE_WOOD_WALL);
+                        output.accept(ModBlocks.DENSE_WOOD_DOOR);
+                        output.accept(ModBlocks.DENSE_WOOD_TRAPDOOR);
+                        //</editor-fold>
                     }).build());
 
     public static void register(IEventBus eventBus) {

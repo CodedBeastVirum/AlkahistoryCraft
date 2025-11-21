@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "C": {
-      "item": "alkahistorycraft:crystalfragment"
-    },
     "A": {
       "item": "minecraft:apple"
+    },
+    "C": {
+      "item": "alkahistorycraft:crystalfragment"
     }
   },
   "pattern": [

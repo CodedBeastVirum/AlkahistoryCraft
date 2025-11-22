@@ -1,0 +1,8 @@
+{
+  "asset_id": "alkahistorycraft:regal",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.alkahistorycraft.regal"
+  },
+  "template_item": "alkahistorycraft:regal_armor_trim_smithing_template"
+}

@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "alkahistorycraft:item/crystal_chisel"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "alkahistorycraft:used": 1
+      },
+      "model": "alkahistorycraft:crystal_chisel_used"
+    }
+  ]
+}

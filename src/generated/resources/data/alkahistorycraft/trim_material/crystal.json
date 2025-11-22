@@ -1,0 +1,9 @@
+{
+  "asset_name": "crystal",
+  "description": {
+    "color": "#780202",
+    "translate": "trim_material.alkahistorycraft.crystal"
+  },
+  "ingredient": "alkahistorycraft:crystalfragment",
+  "item_model_index": 0.4
+}

@@ -40,13 +40,26 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DENSE_WOOD_TRAPDOOR);
                         //</editor-fold>
                         //<editor-fold desc="Crystal Tools">
+
+                        //vanilla tools
                         output.accept(ModItems.CRYSTAL_SWORD);
                         output.accept(ModItems.CRYSTAL_PICKAXE);
                         output.accept(ModItems.CRYSTAL_AXE);
                         output.accept(ModItems.CRYSTAL_SHOVEL);
                         output.accept(ModItems.CRYSTAL_HOE);
+
+                        //custom hammer tool
                         output.accept(ModItems.CRYSTAL_HAMMER);
+
+                        //armors
+                        output.accept(ModItems.CRYSTAL_HELMET);
+                        output.accept(ModItems.CRYSTAL_CHESTPLATE);
+                        output.accept(ModItems.CRYSTAL_LEGGINGS);
+                        output.accept(ModItems.CRYSTAL_BOOTS);
+                        //horse armor
+                        output.accept(ModItems.CRYSTAL_HORSE_ARMOR);
                         //</editor-fold>
+                        output.accept(ModItems.REGAL_SMITHING_TEMPLATE);
                     }).build());
 
     public static void register(IEventBus eventBus) {

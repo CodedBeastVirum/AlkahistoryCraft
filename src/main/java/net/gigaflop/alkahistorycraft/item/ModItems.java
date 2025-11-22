@@ -1,11 +1,9 @@
 package net.gigaflop.alkahistorycraft.item;
 
 import net.gigaflop.alkahistorycraft.AlkahistoryCraft;
-import net.gigaflop.alkahistorycraft.item.custom.CrystalChiselItem;
-import net.gigaflop.alkahistorycraft.item.custom.FuelItem;
-import net.gigaflop.alkahistorycraft.item.custom.HammerItem;
-import net.gigaflop.alkahistorycraft.item.custom.ModToolTiers;
+import net.gigaflop.alkahistorycraft.item.custom.*;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -42,6 +40,7 @@ public class ModItems {
 
 
     //<editor-fold desc="Crystal Tools">
+    //vanilla tools
     public static final DeferredItem<SwordItem> CRYSTAL_SWORD = ITEMS.register("crystal_sword",
             () -> new SwordItem(ModToolTiers.CRYSTAL, new Item.Properties()
                     .attributes(SwordItem.createAttributes(ModToolTiers.CRYSTAL, 6, -2.5f))));
@@ -62,10 +61,40 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.CRYSTAL, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.CRYSTAL, 0f, -3f))));
 
+
+    //custom hammer tool
     public static final DeferredItem<HammerItem> CRYSTAL_HAMMER = ITEMS.register("crystal_hammer",
             () -> new HammerItem(ModToolTiers.CRYSTAL, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.CRYSTAL, 7f, -3.5f))));
+
+
+    //armors
+    public static final DeferredItem<ArmorItem> CRYSTAL_HELMET = ITEMS.register("crystal_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.CRYSTAL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
+
+    public static final DeferredItem<ArmorItem> CRYSTAL_CHESTPLATE = ITEMS.register("crystal_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.CRYSTAL_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+
+    public static final DeferredItem<ArmorItem> CRYSTAL_LEGGINGS = ITEMS.register("crystal_leggings",
+            () -> new ArmorItem(ModArmorMaterials.CRYSTAL_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
+
+    public static final DeferredItem<ArmorItem> CRYSTAL_BOOTS = ITEMS.register("crystal_boots",
+            () -> new ArmorItem(ModArmorMaterials.CRYSTAL_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
+
+    //horse armor
+    public static final DeferredItem<Item> CRYSTAL_HORSE_ARMOR = ITEMS.register("crystal_horse_armor",
+            () -> new AnimalArmorItem(ModArmorMaterials.CRYSTAL_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN, false,
+                    new Item.Properties().stacksTo(1)));
+
     //</editor-fold>
+
+
+    public static final DeferredItem<Item> REGAL_SMITHING_TEMPLATE = ITEMS.register("regal_armor_trim_smithing_template",
+            () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(AlkahistoryCraft.MODID, "regal")));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "alkahistorycraft:crystalfragment"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "CSC",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "alkahistorycraft:crystal_hammer"
+  }
+}

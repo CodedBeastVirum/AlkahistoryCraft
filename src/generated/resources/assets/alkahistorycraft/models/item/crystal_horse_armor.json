@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "alkahistorycraft:item/crystal_chisel"
+    "layer0": "alkahistorycraft:item/crystal_horse_armor"
   }
 }

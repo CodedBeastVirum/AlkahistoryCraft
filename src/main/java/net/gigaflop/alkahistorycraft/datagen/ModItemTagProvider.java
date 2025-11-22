@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -26,11 +27,24 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.AMETHYST_SHARD);
 
         //<editor-fold desc="Crystal Tools">
+        //vanilla tools
         tag(ItemTags.SWORDS).add(ModItems.CRYSTAL_SWORD.get());
         tag(ItemTags.PICKAXES).add(ModItems.CRYSTAL_PICKAXE.get());
         tag(ItemTags.AXES).add(ModItems.CRYSTAL_AXE.get());
         tag(ItemTags.SHOVELS).add(ModItems.CRYSTAL_SHOVEL.get());
         tag(ItemTags.HOES).add(ModItems.CRYSTAL_HOE.get());
+        //armor
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.CRYSTAL_HELMET.get())
+                .add(ModItems.CRYSTAL_CHESTPLATE.get())
+                .add(ModItems.CRYSTAL_LEGGINGS.get())
+                .add(ModItems.CRYSTAL_BOOTS.get());
         //</editor-fold>
+
+        this.tag(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.CRYSTALFRAGMENTS.get());
+
+        this.tag(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.REGAL_SMITHING_TEMPLATE.get());
     }
 }

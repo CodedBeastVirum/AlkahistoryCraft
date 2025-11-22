@@ -6,6 +6,7 @@ import net.gigaflop.alkahistorycraft.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
@@ -52,6 +53,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(recipeOutput, CRYSTAL_SMELTABLES, RecipeCategory.MISC, ModItems.CRYSTALFRAGMENTS.get(), 0.25f, 200, "crystal");
         oreBlasting(recipeOutput, CRYSTAL_SMELTABLES, RecipeCategory.MISC, ModItems.CRYSTALFRAGMENTS.get(), 0.25f, 200, "crystal");
+
         //<editor-fold desc="Dense Wood">
         stairBuilder(ModBlocks.DENSE_WOOD_STAIRS.get(), Ingredient.of(ModBlocks.DENSE_WOOD_BLOCK)).group("Dense Wood")
                 .unlockedBy("has_DenseWood", has(ModBlocks.DENSE_WOOD_BLOCK)).save(recipeOutput);
@@ -80,7 +82,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //</editor-fold>
 
         //<editor-fold desc="Crystal Tools">
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_SWORD.get())
+        //vanilla tools
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CRYSTAL_SWORD.get())
                 .pattern(" C ")
                 .pattern(" C ")
                 .pattern(" S ")
@@ -135,7 +138,63 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('C', ModItems.CRYSTALFRAGMENTS.get())
                 .define('S', Items.STICK)
                 .unlockedBy("has_crystalfragment", has(ModItems.CRYSTALFRAGMENTS)).save(recipeOutput,"alkahistorycraft:crystal_hoe_recipe_reversed");
+
+        //custom hammer tool
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_HAMMER.get())
+                .pattern("CCC")
+                .pattern("CSC")
+                .pattern(" S ")
+                .define('C', ModItems.CRYSTALFRAGMENTS.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystalfragment", has(ModItems.CRYSTALFRAGMENTS)).save(recipeOutput,"alkahistorycraft:crystal_hammer_recipe");
+
+        //armor
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CRYSTAL_HELMET.get())
+                .pattern("CCC")
+                .pattern("C C")
+                .pattern("   ")
+                .define('C', ModItems.CRYSTALFRAGMENTS.get())
+                .unlockedBy("has_crystalfragment", has(ModItems.CRYSTALFRAGMENTS)).save(recipeOutput,"alkahistorycraft:crystal_helmet_recipe");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CRYSTAL_HELMET.get())
+                .pattern("   ")
+                .pattern("CCC")
+                .pattern("C C")
+                .define('C', ModItems.CRYSTALFRAGMENTS.get())
+                .unlockedBy("has_crystalfragment", has(ModItems.CRYSTALFRAGMENTS)).save(recipeOutput,"alkahistorycraft:crystal_helmet_recipe_lowered");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CRYSTAL_CHESTPLATE.get())
+                .pattern("C C")
+                .pattern("CCC")
+                .pattern("CCC")
+                .define('C', ModItems.CRYSTALFRAGMENTS.get())
+                .unlockedBy("has_crystalfragment", has(ModItems.CRYSTALFRAGMENTS)).save(recipeOutput,"alkahistorycraft:crystal_chestplate_recipe");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CRYSTAL_LEGGINGS.get())
+                .pattern("CCC")
+                .pattern("C C")
+                .pattern("C C")
+                .define('C', ModItems.CRYSTALFRAGMENTS.get())
+                .unlockedBy("has_crystalfragment", has(ModItems.CRYSTALFRAGMENTS)).save(recipeOutput,"alkahistorycraft:crystal_leggings_recipe");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CRYSTAL_BOOTS.get())
+                .pattern("   ")
+                .pattern("C C")
+                .pattern("C C")
+                .define('C', ModItems.CRYSTALFRAGMENTS.get())
+                .unlockedBy("has_crystalfragment", has(ModItems.CRYSTALFRAGMENTS)).save(recipeOutput,"alkahistorycraft:crystal_boots_recipe");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CRYSTAL_BOOTS.get())
+                .pattern("C C")
+                .pattern("C C")
+                .pattern("   ")
+                .define('C', ModItems.CRYSTALFRAGMENTS.get())
+                .unlockedBy("has_crystalfragment", has(ModItems.CRYSTALFRAGMENTS)).save(recipeOutput,"alkahistorycraft:crystal_boots_recipe_raised");
+
+
         //</editor-fold>
+
+        trimSmithing(recipeOutput, ModItems.REGAL_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(AlkahistoryCraft.MODID, "regal"));
     }
 
 

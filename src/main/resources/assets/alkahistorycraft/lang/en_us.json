@@ -10,7 +10,17 @@
   "item.alkahistorycraft.crystal_shovel": "Crystal Shovel",
   "item.alkahistorycraft.crystal_axe": "Crystal Axe",
   "item.alkahistorycraft.crystal_hoe": "Crystal Hoe",
+
   "item.alkahistorycraft.crystal_hammer": "Crystal Hammer",
+
+  "item.alkahistorycraft.crystal_helmet": "Crystal Helmet",
+  "item.alkahistorycraft.crystal_chestplate": "Crystal Chestplate",
+  "item.alkahistorycraft.crystal_leggings": "Crystal Leggings",
+  "item.alkahistorycraft.crystal_boots": "Crystal Boots",
+
+  "item.alkahistorycraft.crystal_horse_armor": "Crystal Horse Armor",
+
+  "item.alkahistorycraft.regal_armor_trim_smithing_template": "Regal Smithing Template",
 
   "block.alkahistorycraft.crystal_shard_block": "Block of Crystal shards",
   "block.alkahistorycraft.crystal_shard_ore": "Crystal Ore",
@@ -33,5 +43,8 @@
   "tooltip.alkahistorycraft.infused_crystal_block.tooltip": "§9Able to convert items that fall on it§r",
   "tooltip.alkahistorycraft.crystal_chisel": "<Press §oShift§r for more information>",
   "tooltip.alkahistorycraft.crystal_chisel.shift_down": "§9Can shatter diamonds found in ore§r",
-  "tooltip.alkahistorycraft.jeweled_apple.tooltip": "provides temporary extra hearts, useful in a pinch"
+  "tooltip.alkahistorycraft.jeweled_apple.tooltip": "provides temporary extra hearts, useful in a pinch",
+
+  "trim_pattern.alkahistorycraft.regal" : "Regal Armor Trim",
+  "trim_material.alkahistorycraft.crystal" : "Crystal Material"
 }

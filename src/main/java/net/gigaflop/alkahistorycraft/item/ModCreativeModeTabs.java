@@ -45,6 +45,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CRYSTAL_AXE);
                         output.accept(ModItems.CRYSTAL_SHOVEL);
                         output.accept(ModItems.CRYSTAL_HOE);
+                        output.accept(ModItems.CRYSTAL_HAMMER);
                         //</editor-fold>
                     }).build());
 

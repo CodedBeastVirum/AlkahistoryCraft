@@ -37,6 +37,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.CRYSTAL_AXE);
         handheldItem(ModItems.CRYSTAL_SHOVEL);
         handheldItem(ModItems.CRYSTAL_HOE);
+        handheldItem(ModItems.CRYSTAL_HAMMER);
         //</editor-fold>
     }
 

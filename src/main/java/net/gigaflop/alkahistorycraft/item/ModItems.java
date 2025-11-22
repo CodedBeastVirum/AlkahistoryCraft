@@ -3,6 +3,7 @@ package net.gigaflop.alkahistorycraft.item;
 import net.gigaflop.alkahistorycraft.AlkahistoryCraft;
 import net.gigaflop.alkahistorycraft.item.custom.CrystalChiselItem;
 import net.gigaflop.alkahistorycraft.item.custom.FuelItem;
+import net.gigaflop.alkahistorycraft.item.custom.HammerItem;
 import net.gigaflop.alkahistorycraft.item.custom.ModToolTiers;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
@@ -60,6 +61,10 @@ public class ModItems {
     public static final DeferredItem<HoeItem> CRYSTAL_HOE = ITEMS.register("crystal_hoe",
             () -> new HoeItem(ModToolTiers.CRYSTAL, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.CRYSTAL, 0f, -3f))));
+
+    public static final DeferredItem<HammerItem> CRYSTAL_HAMMER = ITEMS.register("crystal_hammer",
+            () -> new HammerItem(ModToolTiers.CRYSTAL, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.CRYSTAL, 7f, -3.5f))));
     //</editor-fold>
 
     public static void register(IEventBus eventBus) {

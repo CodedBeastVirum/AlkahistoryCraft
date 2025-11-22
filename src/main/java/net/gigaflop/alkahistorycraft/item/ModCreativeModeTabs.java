@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.JEWELEDAPPLE);
                         output.accept(ModItems.UNSTABLEFRAGMENT);
                         output.accept(ModItems.UNSTABLEDUST);
+                        output.accept(ModBlocks.CRYSTAL_LAMP);
                         //<editor-fold desc="Dense Wood">
                         output.accept(ModBlocks.DENSE_WOOD_BLOCK);
                         output.accept(ModBlocks.DENSE_WOOD_STAIRS);
@@ -37,6 +38,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DENSE_WOOD_WALL);
                         output.accept(ModBlocks.DENSE_WOOD_DOOR);
                         output.accept(ModBlocks.DENSE_WOOD_TRAPDOOR);
+                        //</editor-fold>
+                        //<editor-fold desc="Crystal Tools">
+                        output.accept(ModItems.CRYSTAL_SWORD);
+                        output.accept(ModItems.CRYSTAL_PICKAXE);
+                        output.accept(ModItems.CRYSTAL_AXE);
+                        output.accept(ModItems.CRYSTAL_SHOVEL);
+                        output.accept(ModItems.CRYSTAL_HOE);
                         //</editor-fold>
                     }).build());
 

@@ -28,6 +28,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.CRYSTAL_SHARD_BLOCK.get());
         dropSelf(ModBlocks.INFUSED_CRYSTAL_BLOCK.get());
+        dropSelf(ModBlocks.CRYSTAL_LAMP.get());
         //<editor-fold desc="Dense Wood">
         dropSelf(ModBlocks.DENSE_WOOD_BLOCK.get());
         dropSelf(ModBlocks.DENSE_WOOD_STAIRS.get());
@@ -41,6 +42,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.DENSE_WOOD_FENCE_GATE.get());
         dropSelf(ModBlocks.DENSE_WOOD_WALL.get());
         dropSelf(ModBlocks.DENSE_WOOD_TRAPDOOR.get());
+
 
         add(ModBlocks.DENSE_WOOD_DOOR.get(),
                 block -> createDoorTable(ModBlocks.DENSE_WOOD_DOOR.get()));

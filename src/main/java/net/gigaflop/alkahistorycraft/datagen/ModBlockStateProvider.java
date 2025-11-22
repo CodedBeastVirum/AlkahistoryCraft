@@ -2,8 +2,11 @@ package net.gigaflop.alkahistorycraft.datagen;
 
 import net.gigaflop.alkahistorycraft.AlkahistoryCraft;
 import net.gigaflop.alkahistorycraft.block.ModBlocks;
+import net.gigaflop.alkahistorycraft.block.custom.CrystalLamp;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -41,6 +44,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.DENSE_WOOD_FENCE_GATE);
         blockItem(ModBlocks.DENSE_WOOD_TRAPDOOR, "_bottom");
         //</editor-fold>
+
+        customLamp();
+    }
+
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.CRYSTAL_LAMP.get()).forAllStates(state -> {
+            if(state.getValue(CrystalLamp.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("crystal_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(AlkahistoryCraft.MODID, "block/" + "crystal_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("crystal_lamp",
+                        ResourceLocation.fromNamespaceAndPath(AlkahistoryCraft.MODID, "block/" + "crystal_lamp")))};
+            }
+        });
+        simpleBlockItem(ModBlocks.CRYSTAL_LAMP.get(), models().cubeAll("crystal_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(AlkahistoryCraft.MODID, "block/" + "crystal_lamp_on")));
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

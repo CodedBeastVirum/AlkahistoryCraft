@@ -1,4 +1,6 @@
-// 1.21	2025-11-21T18:51:52.1426114	Tags for minecraft:block mod id alkahistorycraft
+// 1.21	2025-11-22T00:43:10.0808759	Tags for minecraft:block mod id alkahistorycraft
+e51188750dc2ad05aff483f34a2371a3ac6986fb data/alkahistorycraft/tags/block/incorrect_for_crystal_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data/alkahistorycraft/tags/block/needs_bismuth_tool.json
 7770279bd8bfab6e71c5247f6e10dbf781da9b25 data/minecraft/tags/block/fences.json
 62cbaf4449bb8011cbb202c53643b4c2e402e06e data/minecraft/tags/block/fence_gates.json
 44334322a679ed24e587041aeb093269e536fa32 data/minecraft/tags/block/mineable/pickaxe.json

@@ -1,6 +1,7 @@
 package net.gigaflop.alkahistorycraft.block;
 
 import net.gigaflop.alkahistorycraft.AlkahistoryCraft;
+import net.gigaflop.alkahistorycraft.block.custom.CrystalLamp;
 import net.gigaflop.alkahistorycraft.block.custom.InfusedCrystalBlock;
 import net.gigaflop.alkahistorycraft.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -63,6 +64,10 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).sound(SoundType.WOOD).noOcclusion()));
     //</editor-fold>
 
+    public static final DeferredBlock<Block> CRYSTAL_LAMP = registerBlock("crystal_lamp",
+            () -> new CrystalLamp(
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(CrystalLamp.CLICKED) ? 15 : 0).sound(SoundType.AMETHYST)));
     //actual block registration
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         //setup a variable for your block to be added to the deferred register list

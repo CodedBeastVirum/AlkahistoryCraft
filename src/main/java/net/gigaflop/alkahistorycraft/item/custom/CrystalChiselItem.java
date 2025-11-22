@@ -1,6 +1,7 @@
 package net.gigaflop.alkahistorycraft.item.custom;
 
 import net.gigaflop.alkahistorycraft.block.ModBlocks;
+import net.gigaflop.alkahistorycraft.component.ModDataComponents;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -46,6 +47,8 @@ public class CrystalChiselItem extends Item {
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
         }
 
@@ -58,6 +61,10 @@ public class CrystalChiselItem extends Item {
             tooltipComponents.add(Component.translatable("tooltip.alkahistorycraft.crystal_chisel.shift_down"));
         } else {
             tooltipComponents.add(Component.translatable("tooltip.alkahistorycraft.crystal_chisel"));
+        }
+
+        if(stack.get(ModDataComponents.COORDINATES) != null) {
+            tooltipComponents.add(Component.literal("Last block changed at:" + stack.get(ModDataComponents.COORDINATES)));
         }
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }

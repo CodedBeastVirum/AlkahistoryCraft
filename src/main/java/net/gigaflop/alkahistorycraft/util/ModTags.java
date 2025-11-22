@@ -11,6 +11,9 @@ import net.minecraft.world.level.block.Block;
 public class ModTags {
     public static class Blocks {
 
+        public static final TagKey<Block> NEEDS_CRYSTAL_TOOL = createTag("needs_bismuth_tool");
+        public static final TagKey<Block> INCORRECT_FOR_CRYSTAL_TOOL = createTag("incorrect_for_crystal_tool");
+
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(AlkahistoryCraft.MODID, name));
         }

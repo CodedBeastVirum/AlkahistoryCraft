@@ -6,6 +6,7 @@ import net.gigaflop.alkahistorycraft.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -23,5 +24,13 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ModTags.Items.TRANSFORMABLE_ITEMS)
                 .add(ModItems.CRYSTALFRAGMENTS.get())
                 .add(Items.AMETHYST_SHARD);
+
+        //<editor-fold desc="Crystal Tools">
+        tag(ItemTags.SWORDS).add(ModItems.CRYSTAL_SWORD.get());
+        tag(ItemTags.PICKAXES).add(ModItems.CRYSTAL_PICKAXE.get());
+        tag(ItemTags.AXES).add(ModItems.CRYSTAL_AXE.get());
+        tag(ItemTags.SHOVELS).add(ModItems.CRYSTAL_SHOVEL.get());
+        tag(ItemTags.HOES).add(ModItems.CRYSTAL_HOE.get());
+        //</editor-fold>
     }
 }

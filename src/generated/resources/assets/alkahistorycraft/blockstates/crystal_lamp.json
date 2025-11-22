@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "alkahistorycraft:block/crystal_lamp"
+    },
+    "clicked=true": {
+      "model": "alkahistorycraft:block/crystal_lamp_on"
+    }
+  }
+}

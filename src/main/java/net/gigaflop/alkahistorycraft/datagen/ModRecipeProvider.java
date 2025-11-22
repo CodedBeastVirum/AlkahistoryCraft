@@ -78,6 +78,64 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         wall(recipeOutput,  RecipeCategory.BUILDING_BLOCKS, ModBlocks.DENSE_WOOD_WALL.get(), ModBlocks.DENSE_WOOD_BLOCK);
 
         //</editor-fold>
+
+        //<editor-fold desc="Crystal Tools">
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_SWORD.get())
+                .pattern(" C ")
+                .pattern(" C ")
+                .pattern(" S ")
+                .define('C', ModItems.CRYSTALFRAGMENTS.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystalfragment", has(ModItems.CRYSTALFRAGMENTS)).save(recipeOutput,"alkahistorycraft:crystal_sword_recipe");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_PICKAXE.get())
+                .pattern("CCC")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('C', ModItems.CRYSTALFRAGMENTS.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystalfragment", has(ModItems.CRYSTALFRAGMENTS)).save(recipeOutput,"alkahistorycraft:crystal_pickaxe_recipe");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_AXE.get())
+                .pattern("CC ")
+                .pattern("CS ")
+                .pattern(" S ")
+                .define('C', ModItems.CRYSTALFRAGMENTS.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystalfragment", has(ModItems.CRYSTALFRAGMENTS)).save(recipeOutput,"alkahistorycraft:crystal_axe_recipe");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_AXE.get())
+                .pattern(" CC")
+                .pattern(" SC")
+                .pattern(" S ")
+                .define('C', ModItems.CRYSTALFRAGMENTS.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystalfragment", has(ModItems.CRYSTALFRAGMENTS)).save(recipeOutput,"alkahistorycraft:crystal_axe_recipe_reversed");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_SHOVEL.get())
+                .pattern(" C ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('C', ModItems.CRYSTALFRAGMENTS.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystalfragment", has(ModItems.CRYSTALFRAGMENTS)).save(recipeOutput,"alkahistorycraft:crystal_shovel_recipe");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_HOE.get())
+                .pattern("CC ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('C', ModItems.CRYSTALFRAGMENTS.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystalfragment", has(ModItems.CRYSTALFRAGMENTS)).save(recipeOutput,"alkahistorycraft:crystal_hoe_recipe");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_HOE.get())
+                .pattern(" CC")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('C', ModItems.CRYSTALFRAGMENTS.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_crystalfragment", has(ModItems.CRYSTALFRAGMENTS)).save(recipeOutput,"alkahistorycraft:crystal_hoe_recipe_reversed");
+        //</editor-fold>
     }
 
 

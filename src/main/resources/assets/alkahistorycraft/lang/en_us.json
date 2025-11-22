@@ -5,9 +5,16 @@
   "item.alkahistorycraft.unstable_fragment": "Unstable Fragment",
   "item.alkahistorycraft.unstable_dust": "Unstable Dust",
 
+  "item.alkahistorycraft.crystal_sword": "Crystal Sword",
+  "item.alkahistorycraft.crystal_pickaxe": "Crystal Pickaxe",
+  "item.alkahistorycraft.crystal_shovel": "Crystal Shovel",
+  "item.alkahistorycraft.crystal_axe": "Crystal Axe",
+  "item.alkahistorycraft.crystal_hoe": "Crystal Hoe",
+
   "block.alkahistorycraft.crystal_shard_block": "Block of Crystal shards",
   "block.alkahistorycraft.crystal_shard_ore": "Crystal Ore",
   "block.alkahistorycraft.infused_crystal_block": "Infused Crystal Block",
+  "block.alkahistorycraft.crystal_lamp": "Crystal lamp",
 
   "block.alkahistorycraft.dense_wood_planks": "Dense wood planks",
   "block.alkahistorycraft.dense_wood_stairs": "Dense wood stairs",

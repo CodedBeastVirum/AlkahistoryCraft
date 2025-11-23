@@ -1,6 +1,7 @@
 package net.gigaflop.alkahistorycraft.datagen;
 
 import net.gigaflop.alkahistorycraft.AlkahistoryCraft;
+import net.gigaflop.alkahistorycraft.enchantment.ModEnchantments;
 import net.gigaflop.alkahistorycraft.trim.ModTrimMaterials;
 import net.gigaflop.alkahistorycraft.trim.ModTrimPatterns;
 import net.minecraft.core.HolderLookup;
@@ -16,7 +17,8 @@ public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
 
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
             .add(Registries.TRIM_MATERIAL, ModTrimMaterials::bootstrap)
-            .add(Registries.TRIM_PATTERN, ModTrimPatterns::bootstrap);
+            .add(Registries.TRIM_PATTERN, ModTrimPatterns::bootstrap)
+            .add(Registries.ENCHANTMENT, ModEnchantments::bootstrap);
 
 
     public ModDatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {

@@ -75,5 +75,7 @@
   "effect.alkahistorycraft.heavy" : "Heavy",
   "item.minecraft.potion.effect.heavy_potion" : "Potion of Heavy",
   "item.minecraft.splash_potion.effect.heavy_potion" : "Splash Potion of Heavy",
-  "item.minecraft.lingering_potion.effect.heavy_potion" : "Lingering Potion of Heavy"
+  "item.minecraft.lingering_potion.effect.heavy_potion" : "Lingering Potion of Heavy",
+
+  "enchantment.alkahistorycraft.zapping" : "Zapping"
 }

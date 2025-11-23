@@ -1,6 +1,7 @@
-// 1.21	2025-11-22T16:20:49.9723414	Tags for minecraft:item mod id alkahistorycraft
+// 1.21	2025-11-23T12:22:29.414254	Tags for minecraft:item mod id alkahistorycraft
 39e186969e8bd0a54831ad92e415dadbcf5943e2 data/alkahistorycraft/tags/item/transformable_items.json
 fe5dca58dfb7530ae78942ace820a2f5a092e2ef data/minecraft/tags/item/axes.json
+718b6eafb07d90394fae335a535a86e5da8d528d data/minecraft/tags/item/enchantable/bow.json
 ed0a6bd4a40c9d343e9532b4265799c61d948a78 data/minecraft/tags/item/hoes.json
 34b9f3452b9059e91092cf0b92f75e086bf59597 data/minecraft/tags/item/pickaxes.json
 e14771b564e002bc215e1a65ce7dd8a3862aca44 data/minecraft/tags/item/shovels.json

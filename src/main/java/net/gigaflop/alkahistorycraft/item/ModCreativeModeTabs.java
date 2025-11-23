@@ -60,6 +60,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CRYSTAL_HORSE_ARMOR);
                         //</editor-fold>
                         output.accept(ModItems.REGAL_SMITHING_TEMPLATE);
+                        output.accept(ModItems.REGAL_BOW);
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -46,5 +46,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         this.tag(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.REGAL_SMITHING_TEMPLATE.get());
+
+        tag(ItemTags.BOW_ENCHANTABLE).add(ModItems.REGAL_BOW.get());
     }
 }

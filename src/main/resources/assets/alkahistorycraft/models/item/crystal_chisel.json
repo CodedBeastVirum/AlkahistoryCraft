@@ -8,7 +8,7 @@
       "predicate": {
         "alkahistorycraft:used": 1
       },
-      "model": "alkahistorycraft:crystal_chisel_used"
+      "model": "alkahistorycraft:item/crystal_chisel_used"
     }
   ]
 }

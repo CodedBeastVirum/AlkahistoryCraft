@@ -4,6 +4,7 @@ import net.gigaflop.alkahistorycraft.AlkahistoryCraft;
 import net.gigaflop.alkahistorycraft.block.custom.CrystalLamp;
 import net.gigaflop.alkahistorycraft.block.custom.InfusedCrystalBlock;
 import net.gigaflop.alkahistorycraft.item.ModItems;
+import net.gigaflop.alkahistorycraft.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -12,6 +13,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -22,14 +24,14 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(AlkahistoryCraft.MODID);
 
     public static final DeferredBlock<Block> CRYSTAL_SHARD_BLOCK = registerBlock("crystal_shard_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(ModSounds.CRYSTAL_BLOCK_SOUNDS)));
 
     public static final DeferredBlock<Block> CRYSTAL_SHARD_ORE = registerBlock("crystal_shard_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> INFUSED_CRYSTAL_BLOCK = registerBlock("infused_crystal_block",
             () -> new InfusedCrystalBlock(
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(ModSounds.CRYSTAL_BLOCK_SOUNDS)));
 
     //<editor-fold desc="Dense Wood">
     public static final DeferredBlock<Block> DENSE_WOOD_BLOCK = registerBlock("dense_wood_planks",

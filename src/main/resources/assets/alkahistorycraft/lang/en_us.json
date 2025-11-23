@@ -20,6 +20,8 @@
 
   "item.alkahistorycraft.crystal_horse_armor": "Crystal Horse Armor",
 
+  "item.alkahistorycraft.regal_bow": "Regal Bow",
+
   "item.alkahistorycraft.regal_armor_trim_smithing_template": "Regal Smithing Template",
 
   "block.alkahistorycraft.crystal_shard_block": "Block of Crystal shards",
@@ -46,5 +48,12 @@
   "tooltip.alkahistorycraft.jeweled_apple.tooltip": "provides temporary extra hearts, useful in a pinch",
 
   "trim_pattern.alkahistorycraft.regal" : "Regal Armor Trim",
-  "trim_material.alkahistorycraft.crystal" : "Crystal Material"
+  "trim_material.alkahistorycraft.crystal" : "Crystal Material",
+
+  "sounds.alkahistorycraft.chisel_use" : "Chisel Used",
+  "sounds.alkahistorycraft.crystal_block_break" : "Crystal Block Broken",
+  "sounds.alkahistorycraft.crystal_block_step" : "Crystal Block Stepped On",
+  "sounds.alkahistorycraft.crystal_block_place" : "Crystal Block Placed",
+  "sounds.alkahistorycraft.crystal_block_hit" : "Crystal Block Hit",
+  "sounds.alkahistorycraft.crystal_block_fall" : "Crystal Block Fallen On"
 }

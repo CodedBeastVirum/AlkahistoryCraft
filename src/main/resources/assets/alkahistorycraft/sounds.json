@@ -1,0 +1,38 @@
+{
+  "chisel_use": {
+    "subtitle": "sounds.alkahistorycraft.chisel_use",
+    "sounds": [
+      "alkahistorycraft:chisel_use"
+    ]
+  },
+  "crystal_block_break": {
+    "subtitle": "sounds.alkahistorycraft.crystal_block_break",
+    "sounds": [
+      "alkahistorycraft:crystal_block_break"
+    ]
+  },
+  "crystal_block_step": {
+    "subtitle": "sounds.alkahistorycraft.crystal_block_step",
+    "sounds": [
+      "alkahistorycraft:crystal_block_step"
+    ]
+  },
+  "crystal_block_place": {
+    "subtitle": "sounds.alkahistorycraft.crystal_block_place",
+    "sounds": [
+      "alkahistorycraft:crystal_block_place"
+    ]
+  },
+  "crystal_block_hit": {
+    "subtitle": "sounds.alkahistorycraft.crystal_block_hit",
+    "sounds": [
+      "alkahistorycraft:crystal_block_hit"
+    ]
+  },
+  "crystal_block_fall": {
+    "subtitle": "sounds.alkahistorycraft.crystal_block_fall",
+    "sounds": [
+      "alkahistorycraft:crystal_block_fall"
+    ]
+  }
+}

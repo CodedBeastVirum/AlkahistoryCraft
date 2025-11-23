@@ -2,13 +2,18 @@ package net.gigaflop.alkahistorycraft.event;
 
 
 import net.gigaflop.alkahistorycraft.AlkahistoryCraft;
+import net.gigaflop.alkahistorycraft.item.ModItems;
 import net.gigaflop.alkahistorycraft.item.custom.HammerItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.Arrow;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
 
 import java.util.HashSet;
@@ -40,6 +45,18 @@ public class ModEvents {
                 serverPlayer.gameMode.destroyBlock(pos);
                 HARVESTED_BLOCKS.remove(pos);
             }
+        }
+    }
+
+    @SubscribeEvent
+    public static void livingDamage(LivingDamageEvent.Pre event) {
+        LivingEntity hitEntity = event.getEntity();
+
+        if(hitEntity instanceof Creeper creeper && event.getSource().getDirectEntity() instanceof Arrow arrow && arrow.getOwner() instanceof Player player) {
+            if (player.getMainHandItem().getItem() == ModItems.REGAL_BOW.get()) {
+                creeper.ignite();
+            }
+
         }
     }
 }

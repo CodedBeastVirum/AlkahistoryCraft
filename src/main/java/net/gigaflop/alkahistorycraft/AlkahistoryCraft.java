@@ -4,6 +4,8 @@ import net.gigaflop.alkahistorycraft.block.ModBlocks;
 import net.gigaflop.alkahistorycraft.component.ModDataComponents;
 import net.gigaflop.alkahistorycraft.item.ModCreativeModeTabs;
 import net.gigaflop.alkahistorycraft.item.ModItems;
+import net.gigaflop.alkahistorycraft.sound.ModSounds;
+import net.gigaflop.alkahistorycraft.util.ModItemProperties;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -63,6 +65,7 @@ public class AlkahistoryCraft {
         ModBlocks.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -97,7 +100,7 @@ public class AlkahistoryCraft {
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
-
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }

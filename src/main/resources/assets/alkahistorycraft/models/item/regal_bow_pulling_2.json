@@ -1,0 +1,6 @@
+{
+  "parent": "alkahistorycraft:item/regal_bow",
+  "textures": {
+    "layer0": "alkahistorycraft:item/regal_bow_pulling_2"
+  }
+}

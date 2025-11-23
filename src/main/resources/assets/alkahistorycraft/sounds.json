@@ -34,5 +34,13 @@
     "sounds": [
       "alkahistorycraft:crystal_block_fall"
     ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "alkahistorycraft:bar_brawl",
+        "stream": true
+      }
+    ]
   }
 }

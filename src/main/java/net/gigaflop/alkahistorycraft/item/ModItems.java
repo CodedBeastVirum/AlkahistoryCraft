@@ -2,6 +2,7 @@ package net.gigaflop.alkahistorycraft.item;
 
 import net.gigaflop.alkahistorycraft.AlkahistoryCraft;
 import net.gigaflop.alkahistorycraft.item.custom.*;
+import net.gigaflop.alkahistorycraft.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
@@ -100,6 +101,9 @@ public class ModItems {
             () -> new BowItem(new Item.Properties().durability(500)));
 
     //</editor-fold>
+
+    public static final DeferredItem<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(128)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

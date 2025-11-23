@@ -2,8 +2,10 @@ package net.gigaflop.alkahistorycraft;
 
 import net.gigaflop.alkahistorycraft.block.ModBlocks;
 import net.gigaflop.alkahistorycraft.component.ModDataComponents;
+import net.gigaflop.alkahistorycraft.effect.ModEffects;
 import net.gigaflop.alkahistorycraft.item.ModCreativeModeTabs;
 import net.gigaflop.alkahistorycraft.item.ModItems;
+import net.gigaflop.alkahistorycraft.potion.ModPotions;
 import net.gigaflop.alkahistorycraft.sound.ModSounds;
 import net.gigaflop.alkahistorycraft.util.ModItemProperties;
 import org.slf4j.Logger;
@@ -66,6 +68,9 @@ public class AlkahistoryCraft {
 
         ModDataComponents.register(modEventBus);
         ModSounds.register(modEventBus);
+
+        ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

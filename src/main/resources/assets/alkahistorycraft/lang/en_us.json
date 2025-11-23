@@ -20,6 +20,9 @@
 
   "item.alkahistorycraft.crystal_horse_armor": "Crystal Horse Armor",
 
+  "item.alkahistorycraft.bar_brawl_music_disc": "Music Disc - Bar Brawl",
+  "item.alkahistorycraft.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
   "item.alkahistorycraft.regal_bow": "Regal Bow",
 
   "item.alkahistorycraft.regal_armor_trim_smithing_template": "Regal Smithing Template",
@@ -40,6 +43,13 @@
   "block.alkahistorycraft.dense_wood_door": "Dense wood door",
   "block.alkahistorycraft.dense_wood_trapdoor": "Dense wood trapdoor",
 
+  "painting.alkahistorycraft.world.title": "World",
+  "painting.alkahistorycraft.world.author": "NanoAttack",
+  "painting.alkahistorycraft.shrimp.title": "Shrimp",
+  "painting.alkahistorycraft.shrimp.author": "NanoAttack",
+  "painting.alkahistorycraft.saw_them.title": "Saw Them",
+  "painting.alkahistorycraft.saw_them.author": "NanoAttack",
+
   "creativetab.alkahistorycraft.alkahistory_items": "Alkahistory Items",
 
   "tooltip.alkahistorycraft.infused_crystal_block.tooltip": "§9Able to convert items that fall on it§r",
@@ -55,5 +65,15 @@
   "sounds.alkahistorycraft.crystal_block_step" : "Crystal Block Stepped On",
   "sounds.alkahistorycraft.crystal_block_place" : "Crystal Block Placed",
   "sounds.alkahistorycraft.crystal_block_hit" : "Crystal Block Hit",
-  "sounds.alkahistorycraft.crystal_block_fall" : "Crystal Block Fallen On"
+  "sounds.alkahistorycraft.crystal_block_fall" : "Crystal Block Fallen On",
+
+  "effect.alkahistorycraft.slimy" : "Slimy",
+  "item.minecraft.potion.effect.slimy_potion" : "Potion of Slimy",
+  "item.minecraft.splash_potion.effect.slimy_potion" : "Splash Potion of Slimy",
+  "item.minecraft.lingering_potion.effect.slimy_potion" : "Lingering Potion of Slimy",
+
+  "effect.alkahistorycraft.heavy" : "Heavy",
+  "item.minecraft.potion.effect.heavy_potion" : "Potion of Heavy",
+  "item.minecraft.splash_potion.effect.heavy_potion" : "Splash Potion of Heavy",
+  "item.minecraft.lingering_potion.effect.heavy_potion" : "Lingering Potion of Heavy"
 }

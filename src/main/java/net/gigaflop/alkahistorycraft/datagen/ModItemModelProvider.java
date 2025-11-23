@@ -80,6 +80,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         //</editor-fold>
 
         basicItem(ModItems.REGAL_SMITHING_TEMPLATE.get());
+        basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
     }
 
     // all this for a crumb of armor trims

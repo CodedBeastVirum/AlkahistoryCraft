@@ -61,6 +61,7 @@ public class ModCreativeModeTabs {
                         //</editor-fold>
                         output.accept(ModItems.REGAL_SMITHING_TEMPLATE);
                         output.accept(ModItems.REGAL_BOW);
+                        output.accept(ModItems.BAR_BRAWL_MUSIC_DISC);
                     }).build());
 
     public static void register(IEventBus eventBus) {

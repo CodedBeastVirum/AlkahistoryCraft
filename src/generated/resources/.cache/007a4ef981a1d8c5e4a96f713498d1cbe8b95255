@@ -1,4 +1,4 @@
-// 1.21	2025-11-23T15:39:26.9534759	Item Models: alkahistorycraft
+// 1.21	2025-11-24T17:33:30.0185029	Item Models: alkahistorycraft
 b49ba13e8a9b7afa9772bf49695efa7aea27908a assets/alkahistorycraft/models/item/bar_brawl_music_disc.json
 132b59d65b9c01ce6221c3ed648f7e6b2950bfbf assets/alkahistorycraft/models/item/crystalfragment.json
 853d54220fe5d28f78f0c327f94ea336edbb936f assets/alkahistorycraft/models/item/crystal_axe.json
@@ -56,7 +56,9 @@ d2b65c0c995cffd2236c75269b8296baf8845662 assets/alkahistorycraft/models/item/cry
 6ec21325bcc1a5a4f03c62138c5cc925ad4d30c7 assets/alkahistorycraft/models/item/dense_wood_door.json
 153c958b6609246327a8cc8246927fca0f2e4cbb assets/alkahistorycraft/models/item/dense_wood_fence.json
 b380f1841e8ce1a1914d0a097e86511080f5ed58 assets/alkahistorycraft/models/item/dense_wood_wall.json
+05503babb099535c6f978566121e51a120a405f3 assets/alkahistorycraft/models/item/goji_berry.json
 7a67348b98a3c5ac1c161865d22c12d206f146ce assets/alkahistorycraft/models/item/jeweled_apple.json
+dcc62df37682ed9705653e499b24f6758e0bc2fd assets/alkahistorycraft/models/item/radish_seeds.json
 204e1c292f47df27feb95c3c3a64856ea681f12c assets/alkahistorycraft/models/item/regal_armor_trim_smithing_template.json
 8ee3225226fac91ad0927590cb859da24d337641 assets/alkahistorycraft/models/item/unstable_dust.json
 407f8224023a6cc293da7e9ccd0e0a726cc776de assets/alkahistorycraft/models/item/unstable_fragment.json

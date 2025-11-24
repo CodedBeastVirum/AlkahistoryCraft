@@ -81,6 +81,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.REGAL_SMITHING_TEMPLATE.get());
         basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
+
+        basicItem(ModItems.RADISH_SEEDS.get());
+        basicItem(ModItems.GOJI_BERRY.get());
     }
 
     // all this for a crumb of armor trims

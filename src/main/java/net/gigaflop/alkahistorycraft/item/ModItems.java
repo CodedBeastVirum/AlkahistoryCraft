@@ -1,6 +1,7 @@
 package net.gigaflop.alkahistorycraft.item;
 
 import net.gigaflop.alkahistorycraft.AlkahistoryCraft;
+import net.gigaflop.alkahistorycraft.block.ModBlocks;
 import net.gigaflop.alkahistorycraft.item.custom.*;
 import net.gigaflop.alkahistorycraft.sound.ModSounds;
 import net.minecraft.network.chat.Component;
@@ -104,6 +105,12 @@ public class ModItems {
 
     public static final DeferredItem<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(128)));
+
+    public static final DeferredItem<Item> RADISH_SEEDS = ITEMS.register("radish_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.RADISH_CROP.get(), new Item.Properties()));
+
+    public static final DeferredItem<Item> GOJI_BERRY = ITEMS.register("goji_berry",
+            () -> new ItemNameBlockItem(ModBlocks.GOJI_BERRY_BUSH.get(), new Item.Properties().food(ModFoodProperties.GOJI_BERRY)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

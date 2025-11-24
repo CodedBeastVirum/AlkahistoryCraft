@@ -2,7 +2,9 @@ package net.gigaflop.alkahistorycraft.block;
 
 import net.gigaflop.alkahistorycraft.AlkahistoryCraft;
 import net.gigaflop.alkahistorycraft.block.custom.CrystalLamp;
+import net.gigaflop.alkahistorycraft.block.custom.GojiBerryBushBlock;
 import net.gigaflop.alkahistorycraft.block.custom.InfusedCrystalBlock;
+import net.gigaflop.alkahistorycraft.block.custom.RadishCropBlock;
 import net.gigaflop.alkahistorycraft.item.ModItems;
 import net.gigaflop.alkahistorycraft.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -70,6 +72,15 @@ public class ModBlocks {
             () -> new CrystalLamp(
                     BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()
                             .lightLevel(state -> state.getValue(CrystalLamp.CLICKED) ? 15 : 0).sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> RADISH_CROP = BLOCKS.register("radish_crop",
+            () -> new RadishCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS).noOcclusion()));
+
+    public static final DeferredBlock<Block> GOJI_BERRY_BUSH = BLOCKS.register("goji_berry_bush",
+            () -> new GojiBerryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH).noOcclusion()));
+
+
+
     //actual block registration
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         //setup a variable for your block to be added to the deferred register list

@@ -1,4 +1,4 @@
-// 1.21	2025-11-21T20:51:17.5567602	Loot Tables
+// 1.21	2025-11-24T17:33:30.0215036	Loot Tables
 4f6a5e949d9939cb6a7f728d946480ed1a6a1bfb data/alkahistorycraft/loot_table/blocks/crystal_lamp.json
 d1ff45cb95e49a115140a20a241b3e105c47ce65 data/alkahistorycraft/loot_table/blocks/crystal_shard_block.json
 a7cde79edcf1d8cca784f5c301f84d6086d2a6fb data/alkahistorycraft/loot_table/blocks/crystal_shard_ore.json
@@ -12,4 +12,6 @@ b72b664f5f33e070c901f44b28ff5c4494cdc539 data/alkahistorycraft/loot_table/blocks
 0175189f655b0c73eb9c9c6250b94a97afaafebb data/alkahistorycraft/loot_table/blocks/dense_wood_stairs.json
 03c9307c4aa9e8b2207d3eb2769e1edf18fdca0a data/alkahistorycraft/loot_table/blocks/dense_wood_trapdoor.json
 47a8f76e01c7efa231be974aba650882b700d3af data/alkahistorycraft/loot_table/blocks/dense_wood_wall.json
+44b57c77d64afab9c66abb57afebe3dd477bae06 data/alkahistorycraft/loot_table/blocks/goji_berry_bush.json
 0ad5a8d7bb657ea6a73a1d53fcae3ff03fb6e2c8 data/alkahistorycraft/loot_table/blocks/infused_crystal_block.json
+66469ec701b228e0cbc1275981c3146d5f139ef1 data/alkahistorycraft/loot_table/blocks/radish_crop.json
